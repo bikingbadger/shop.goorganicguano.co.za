@@ -8,14 +8,14 @@
       <div class="item__data">
         <div>
           Price per Item:
-          <strong>${{ price }}</strong>
+          <strong>R{{ price }}</strong>
         </div>
         <div>
           Quantity:
           <strong>{{ qty }}</strong>
         </div>
       </div>
-      <div class="item__total">Total: ${{ itemTotal }}</div>
+      <div class="item__total">Total: R{{ itemTotal }}</div>
       <button @click="removeProductFromCart(prodId)">Remove</button>
     </div>
   </li>

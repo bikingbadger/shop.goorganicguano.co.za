@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      <router-link to="/">VueShop</router-link>
+      <router-link to="/">Go Organic Shop</router-link>
     </h1>
     <nav>
       <ul>

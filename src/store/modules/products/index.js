@@ -9,29 +9,38 @@ export default {
       products: [
         {
           id: 'p1',
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Books_HD_%288314929977%29.jpg/640px-Books_HD_%288314929977%29.jpg',
-          title: 'Book Collection',
-          description:
-            'A collection of must-read books. All-time classics included!',
-          price: 99.99
+          image: 'https://source.unsplash.com/zL21JJh2OAk/400x400',
+          title: 'Go Organic Guano Liquid',
+          description: '1 Lt Bottle',
+          price: 30
         },
         {
           id: 'p2',
-          image:
-            'https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Tent_at_High_Shelf_Camp_cropped.jpg/640px-Tent_at_High_Shelf_Camp_cropped.jpg',
-          title: 'Mountain Tent',
-          description: 'A tent for the ambitious outdoor tourist.',
-          price: 129.99
+          image: 'https://source.unsplash.com/9OPxXGEeLTM/400x400',
+          title: 'Go Organic Guano Liquid',
+          description: '2 Lt Cans',
+          price: 50
         },
         {
           id: 'p3',
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/640px-Good_Food_Display_-_NCI_Visuals_Online.jpg',
-          title: 'Food Box',
-          description:
-            'May be partially expired when it arrives but at least it is cheap!',
-          price: 6.99
+          image: 'https://source.unsplash.com/ErMaQGihZvI/400x400',
+          title: 'Go Organic Guano Liquid',
+          description: '5 Lt Agri Cans',
+          price: 100
+        },
+        {
+          id: 'p4',
+          image: 'https://source.unsplash.com/jg5TOGJhq5M/400x400',
+          title: 'Go Organic Guano Liquid',
+          description: '25 Lt Cans',
+          price: 450
+        },
+        {
+          id: 'p5',
+          image: 'https://source.unsplash.com/lNBLj4fKDFs/400x400',
+          title: 'Go Organic Guano Liquid',
+          description: '1000 Lt Flow Bins',
+          price: 15000
         }
       ]
     };
