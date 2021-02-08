@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      <router-link to="/">Go Organic Shop</router-link>
+      <router-link to="/"><img class="icon" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_50,dpr_auto/v1611767547/website/icon_m9th3h.png" alt="Icon"/>Go Organic Shop</router-link>
     </h1>
     <nav>
       <ul>
