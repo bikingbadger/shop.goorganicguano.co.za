@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <ul>
       <product-item
         v-for="prod in products"
@@ -34,6 +34,9 @@ ul {
   list-style: none;
   margin: 2rem auto;
   padding: 0;
-  max-width: 40rem;
+  /* max-width: 40rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 </style>

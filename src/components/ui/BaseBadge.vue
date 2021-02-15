@@ -1,5 +1,5 @@
 <template>
-  <span class="badge" :class="['badge--' + mode, {nml: noMarginLeft}]">
+  <span class="badge" :class="['badge--' + mode, { nml: noMarginLeft }]">
     <slot></slot>
   </span>
 </template>
@@ -7,17 +7,17 @@
 <script>
 export default {
   props: ['mode', 'noMarginLeft']
-}
+};
 </script>
 
 <style scoped>
 .badge {
   display: inline-block;
-  padding: 0.15rem 1.25rem;
+  padding: 1.25rem 1rem;
   background-color: #ccc;
   color: #292929;
-  margin: 0 0.75rem;
-  border-radius: 30px;
+  /* margin: 0 0.75rem; */
+  border-radius: 50%;
 }
 
 .nml {
@@ -25,7 +25,7 @@ export default {
 }
 
 .badge--highlight {
-  background-color: #f0b800;
+  background-color: var(--clr-accent-500);
   color: black;
 }
 

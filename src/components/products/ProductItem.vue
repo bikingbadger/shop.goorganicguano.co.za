@@ -6,22 +6,20 @@
       </div>
       <div class="product__text">
         <h3>{{ title }}</h3>
-        <base-badge mode="highlight" :no-margin-left="true">
-          <h4>R{{ price }}</h4>
-        </base-badge>
         <p>{{ description }}</p>
+        <h4 class="product__price">R{{ price }}</h4>
       </div>
-    </div>
-    <div class="product__actions">
-      <button @click="addToCart">Add to Cart</button>
+      <div class="product__actions">
+        <button @click="addToCart">Add to Cart</button>
+      </div>
     </div>
   </li>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
+
 export default {
-  //inject: ['addProductToCart'],
   props: ['id', 'image', 'title', 'price', 'description'],
   methods: {
     ...mapActions('cart', ['addProductToCart']),
@@ -41,48 +39,53 @@ export default {
 li {
   margin: 1.5rem auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .product__data {
-  display: flex;
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  justify-content: center;
 }
 
 .product__image {
-  margin-right: 1rem;
+  text-align: center;
 }
 
 .product__image img {
   height: 10rem;
   width: 10rem;
   object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem;
 }
 
-.product__text h3 {
-  margin: 0 0 0.5rem 0;
-}
-
-.product__text h4 {
-  margin: 0;
+.product__price {
+  text-transform: capitalize;
+  font-weight: var(--fw-200);
 }
 
 .product__actions {
-  text-align: center;
+  align-self: end;
+  justify-self: end;
 }
 
 button {
   font: inherit;
   cursor: pointer;
-  background-color: #45006d;
-  color: white;
-  border: 1px solid #45006d;
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-primary-900);
+  border: 1px solid var(--clr-primary-500);
   padding: 0.5rem 1.5rem;
   border-radius: 30px;
 }
 
 button:hover,
 button:active {
-  background-color: #760ab4;
-  border-color: #760ab4;
+  background-color: var(--clr-primary-900);
+  border-color: var(--clr-primary-900);
+  color: var(--clr-neutral-100);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 </style>
